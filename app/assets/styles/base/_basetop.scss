@@ -9,14 +9,6 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -93,6 +85,10 @@ textarea {
    Custom CSS
    ========================================================================== */
 
+html {
+  min-height: 100vh;
+}
+
 body {
   background: linear-gradient(
     to right bottom,
@@ -103,5 +99,5 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--grey-dark-2);
-  min-height: 100vh;
+  min-height: 100%;
 }

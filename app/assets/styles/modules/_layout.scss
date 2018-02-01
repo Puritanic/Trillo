@@ -1,0 +1,31 @@
+.container {
+  // using max width so that if there is no space for 120rem to ocuppy container will take 100% of the available space
+  max-width: 120rem;
+  min-height: 50rem;
+  margin: 8rem auto;
+  background: var(--grey-light-2);
+  box-shadow: var(--shadow-dark);
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: 1px solid var(--grey-light-2);
+}
+
+.content {
+  display: flex;
+
+  .sidebar {
+    background: var(--grey-dark-1);
+    // flex: grow shrink basis;
+    // here we dont want for element to grow and shrink, just want to always keep its width at 18%
+    flex: 0 0 18%;
+  }
+
+  .hotel-view {
+    background: #fff;
+    // with flex: 1; we want for element to grow and occupy all available space
+    flex: 1;
+  }
+}
