@@ -3,49 +3,50 @@
   font-style: normal;
   font-weight: 400;
   src: local("Open Sans Regular"),local(OpenSans-Regular); }
+
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   src: local("Open Sans Bold"),local(OpenSans-Bold); }
-/*
-COLORS
 
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
-
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
-*/
 /* Fonts */
+
+html {
+  font-size: 62.5%; }
+
 body {
-  font-family: 'Open Sans'; }
+  font-family: 'Open Sans';
+  font-weight: 400;
+  line-height: 1.6; }
+
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -53,15 +54,19 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
+
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
+
 /*
  * A better looking default horizontal rule
  */
+
 hr {
   display: block;
   height: 1px;
@@ -69,11 +74,13 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0; }
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
+
 audio,
 canvas,
 iframe,
@@ -81,36 +88,44 @@ img,
 svg,
 video {
   vertical-align: middle; }
+
 /*
  * Remove default fieldset styles.
  */
+
 fieldset {
   border: 0;
   margin: 0;
   padding: 0; }
+
 /*
  * Allow only vertical resizing of textareas.
  */
+
 textarea {
   resize: vertical; }
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
+
 /* ==========================================================================
    Custom CSS
    ========================================================================== */
+
+body {
+  background: -webkit-gradient(linear, left top, right bottom, from(#eb2f64), color-stop(#ff3366), to(#ba265d));
+  background: linear-gradient(to right bottom, #eb2f64, #ff3366, #ba265d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #777;
+  min-height: 100vh; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 /*
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -120,11 +135,13 @@ textarea {
   padding: 0;
   position: absolute;
   width: 1px; }
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -133,11 +150,14 @@ textarea {
   overflow: visible;
   position: static;
   width: auto; }
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
+
 .invisible {
   visibility: hidden; }
+
 /*
  * Clearfix: contain floats
  *
@@ -149,28 +169,35 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+
 .clearfix:before,
 .clearfix:after {
-  content: " ";
+  content: ' ';
   /* 1 */
   display: table;
   /* 2 */ }
+
 .clearfix:after {
   clear: both; }
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
+
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
+
 @media print {
   *,
   *:before,
@@ -195,9 +222,9 @@ textarea {
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: ""; }
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: ''; }
   pre,
   blockquote {
     border: 1px solid #999;

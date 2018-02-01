@@ -1,6 +1,5 @@
-@import 'base/variables';
-@import 'base/fonts';
-@import 'base/basetop';
-@import 'base/grids';
+@import 'base/variables', 'base/typography', 'base/basetop', 'base/grids';
+
+@import 'modules/components', 'modules/layout';
 
 @import 'base/basebottom';
