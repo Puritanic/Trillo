@@ -263,6 +263,68 @@ body {
 
 /* SIDE NAVIGATION */
 
+.side-nav {
+  font-size: 14px;
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 35px;
+  margin-top: 3.5rem; }
+
+.side-nav__item {
+    position: relative; }
+
+.side-nav__item:not(:last-child) {
+      margin-bottom: 5px;
+      margin-bottom: 0.5rem; }
+
+.side-nav__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background: #eb2f64;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.1s, background-color 0.2s, -webkit-transform 0.2s;
+    transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.1s, background-color 0.2s, -webkit-transform 0.2s;
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.1s, background-color 0.2s;
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.1s, background-color 0.2s, -webkit-transform 0.2s; }
+
+.side-nav__item:hover::before, .side-nav__item--active::before {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    width: 100%; }
+
+.side-nav__item:active::before {
+    background-color: #ff3366; }
+
+.side-nav__link:link, .side-nav__link:visited {
+    display: block;
+    padding: 15px 30px;
+    padding: 1.5rem 3rem;
+    color: #faf9f9;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.side-nav__icon {
+    width: 17.5px;
+    width: 1.75rem;
+    height: 17.5px;
+    height: 1.75rem;
+    margin-right: 20px;
+    margin-right: 2rem;
+    fill: currentColor; }
+
 .legal {
   font-size: 12px;
   font-size: 1.2rem;
@@ -308,9 +370,21 @@ body {
     background: #333;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 18%;
-            flex: 0 0 18%; }
+            flex: 0 0 18%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .content .hotel-view {
+    height: 800px;
+    height: 80rem;
     background: #fff;
     -webkit-box-flex: 1;
         -ms-flex: 1;
