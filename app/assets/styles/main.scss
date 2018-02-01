@@ -1,5 +1,10 @@
 @import 'base/variables', 'base/basetop', 'base/typography', 'base/grids';
 
-@import 'modules/header', 'modules/side-bar', 'modules/layout';
+@import 'modules/header',
+  'modules/side-bar',
+  'modules/gallery',
+  'modules/overview',
+  'modules/btn-inline',
+  'modules/layout';
 
 @import 'base/basebottom';
