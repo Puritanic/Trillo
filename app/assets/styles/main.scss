@@ -1,11 +1,13 @@
 @import 'base/variables', 'base/basetop', 'base/typography', 'base/grids';
 
 @import 'modules/header',
+  'modules/layout',
   'modules/side-bar',
   'modules/gallery',
   'modules/overview',
   'modules/btn-inline',
   'modules/description',
-  'modules/layout';
+  'modules/reviews',
+  'modules/cta';
 
 @import 'base/basebottom';

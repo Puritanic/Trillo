@@ -261,6 +261,99 @@ body {
     margin-right: 10px;
     margin-right: 1rem; }
 
+.container {
+  max-width: 1200px;
+  max-width: 120rem;
+  min-height: 500px;
+  min-height: 50rem;
+  margin: 80px auto;
+  margin: 8rem auto;
+  background: #f4f2f2;
+  -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3);
+          box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3); }
+
+.header {
+  font-size: 14px;
+  font-size: 1.4rem;
+  height: 70px;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.content .sidebar {
+    background: #333;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 18%;
+            flex: 0 0 18%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.content .hotel-view {
+    background: #fff;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+
+.content .hotel-view .details {
+      font-size: 14px;
+      font-size: 1.4rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 45px;
+      padding: 4.5rem;
+      background: #faf9f9;
+      border-bottom: 1px solid #f4f2f2; }
+
+.content .hotel-view .description {
+      background: #fff;
+      -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
+              box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 60%;
+              flex: 0 0 60%;
+      margin-right: 45px;
+      margin-right: 4.5rem;
+      padding: 30px;
+      padding: 3rem; }
+
+.content .hotel-view .user-reviews {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+
 /* SIDE NAVIGATION */
 
 .side-nav {
@@ -433,8 +526,16 @@ body {
   -webkit-transition: all 0.2s;
   transition: all 0.2s; }
 
+.btn-inline span {
+    margin-left: 3px;
+    -webkit-transition: margin-left 0.2s;
+    transition: margin-left 0.2s; }
+
 .btn-inline:hover {
     color: #333; }
+
+.btn-inline:hover span {
+      margin-left: 8px; }
 
 .btn-inline:focus {
     outline: none;
@@ -543,89 +644,138 @@ body {
       margin-right: -15px;
       margin-right: -1.5rem; }
 
-.container {
-  max-width: 1200px;
-  max-width: 120rem;
-  min-height: 500px;
-  min-height: 50rem;
-  margin: 80px auto;
-  margin: 8rem auto;
-  background: #f4f2f2;
-  -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3);
-          box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3); }
+.review {
+  background: #fff;
+  -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
+          box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
+  padding: 30px;
+  padding: 3rem;
+  margin-bottom: 35px;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden; }
 
-.header {
-  font-size: 14px;
-  font-size: 1.4rem;
-  height: 70px;
-  height: 7rem;
-  background-color: #fff;
-  border-bottom: 1px solid #f4f2f2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+.review__text {
+    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    z-index: 100;
+    position: relative; }
 
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.content .sidebar {
-    background: #333;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 18%;
-            flex: 0 0 18%;
+.review__user {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
-.content .hotel-view {
-    background: #fff;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
+.review__photo {
+    width: 45px;
+    width: 4.5rem;
+    height: 45px;
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-right: 1.5rem; }
 
-.content .hotel-view .details {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      padding: 45px;
-      padding: 4.5rem;
-      background: #faf9f9;
-      border-bottom: 1px solid #f4f2f2; }
+.review__user-box {
+    margin-right: auto; }
 
-.content .hotel-view .description {
-      font-size: 14px;
-      font-size: 1.4rem;
-      background: #fff;
-      -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
-              box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 60%;
-              flex: 0 0 60%;
-      margin-right: 45px;
-      margin-right: 4.5rem;
-      padding: 30px;
-      padding: 3rem; }
+.review__username {
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    margin-bottom: 0.4rem; }
 
-.content .hotel-view .user-reviews {
-      background: #cfa;
-      -webkit-box-flex: 1;
-          -ms-flex: 1;
-              flex: 1; }
+.review__user-date {
+    font-size: 10px;
+    font-size: 1rem;
+    color: #999; }
+
+.review__rating {
+    color: #eb2f64;
+    font-size: 22px;
+    font-size: 2.2rem;
+    font-weight: 300; }
+
+.review::before {
+    content: '\201C';
+    position: absolute;
+    line-height: 1;
+    top: -31px;
+    top: -3.1rem;
+    left: -7px;
+    left: -0.7rem;
+    font-size: 200px;
+    font-size: 20rem;
+    color: #f4f2f2;
+    font-family: sans-serif;
+    z-index: 10; }
+
+.cta {
+  padding: 35px 0;
+  padding: 3.5rem 0;
+  text-align: center; }
+
+.cta__book-now {
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase; }
+
+.btn {
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff3366), to(#ba265d));
+  background-image: linear-gradient(to right, #ff3366, #ba265d);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+.btn > * {
+    display: inline-block;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+
+.btn__visible {
+    padding: 20px 75px;
+    padding: 2rem 7.5rem; }
+
+.btn__hidden {
+    position: absolute;
+    padding: 20px 0;
+    padding: 2rem 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: -100%; }
+
+.btn:hover {
+    background-image: -webkit-gradient(linear, right top, left top, from(#ff3366), to(#ba265d));
+    background-image: linear-gradient(to left, #ff3366, #ba265d); }
+
+.btn:hover .btn__visible {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%); }
+
+.btn:hover .btn__hidden {
+    top: 0; }
+
+.btn:focus {
+    outline: none;
+    -webkit-animation: pulse 1s infinite;
+            animation: pulse 1s infinite; }
 
 /* ==========================================================================
    Helper classes
