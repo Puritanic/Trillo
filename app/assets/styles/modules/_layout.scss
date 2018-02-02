@@ -32,10 +32,29 @@
   }
 
   .hotel-view {
-    height: 80rem;
-
     background: #fff;
     // with flex: 1; we want for element to grow and occupy all available space
     flex: 1;
+
+    .details {
+      display: flex;
+      padding: 4.5rem;
+      background: var(--grey-light-1);
+      border-bottom: 1px solid var(--grey-light-2);
+    }
+
+    .description {
+      font-size: 1.4rem;
+      background: #fff;
+      box-shadow: var(--shadow-light);
+      flex: 0 0 60%;
+      margin-right: 4.5rem;
+      padding: 3rem;
+    }
+
+    .user-reviews {
+      background: #cfa;
+      flex: 1;
+    }
   }
 }

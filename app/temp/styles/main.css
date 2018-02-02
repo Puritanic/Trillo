@@ -475,6 +475,74 @@ body {
     -webkit-box-shadow: none;
             box-shadow: none; } }
 
+.description .paragraph:not(:last-of-type) {
+  margin-bottom: 20px;
+  margin-bottom: 2rem; }
+
+.description .list {
+  list-style: none;
+  margin: 30px 0;
+  margin: 3rem 0;
+  padding: 30px 0;
+  padding: 3rem 0;
+  border-top: 1px solid #f4f2f2;
+  border-bottom: 1px solid #f4f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.description .list__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin-bottom: 7px;
+    margin-bottom: 0.7rem; }
+
+.description .list__item::before {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    height: 1rem;
+    width: 10px;
+    width: 1rem;
+    margin-right: 7px;
+    margin-right: 0.7rem;
+    background-color: #eb2f64;
+    -webkit-mask-image: url('../images/chevron-thin-right.svg');
+    -webkit-mask-size: cover;
+    mask-image: url('../images/chevron-thin-right.svg');
+    mask-size: cover; }
+
+.description .recommend {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.description .recommend__count {
+    margin-right: auto; }
+
+.description .recommend__photo {
+    height: 40px;
+    height: 4rem;
+    width: 40px;
+    width: 4rem;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    border-radius: 50%;
+    border: 3px solid #fff; }
+
+.description .recommend__photo:not(:last-child) {
+      margin-right: -15px;
+      margin-right: -1.5rem; }
+
 .container {
   max-width: 1200px;
   max-width: 120rem;
@@ -525,12 +593,39 @@ body {
             justify-content: space-between; }
 
 .content .hotel-view {
-    height: 800px;
-    height: 80rem;
     background: #fff;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
+
+.content .hotel-view .details {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 45px;
+      padding: 4.5rem;
+      background: #faf9f9;
+      border-bottom: 1px solid #f4f2f2; }
+
+.content .hotel-view .description {
+      font-size: 14px;
+      font-size: 1.4rem;
+      background: #fff;
+      -webkit-box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
+              box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 60%;
+              flex: 0 0 60%;
+      margin-right: 45px;
+      margin-right: 4.5rem;
+      padding: 30px;
+      padding: 3rem; }
+
+.content .hotel-view .user-reviews {
+      background: #cfa;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
 
 /* ==========================================================================
    Helper classes
