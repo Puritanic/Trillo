@@ -12,6 +12,11 @@
   align-items: center;
   justify-content: flex;
 
+  @media only screen and (max-width: $bp-smallest) {
+    order: 1;
+    flex: 0 0 100%;
+  }
+
   &__input {
     // form elements doesn't inherit font properties from parent
     font-family: inherit;

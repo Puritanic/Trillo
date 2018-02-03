@@ -17,3 +17,9 @@ $primary-color: #eb2f64;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
 }
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px 1100/16
+$bp-medium: 56.25em; // 900px 900/16
+$bp-small: 37.5em; // 600px 600/16
+$bp-smallest: 31.25em; // 500px 500/16
